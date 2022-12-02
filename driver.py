@@ -2,6 +2,10 @@ from desert import Desert
 
 size_of_desert = [0,0]
 
+print ("Welcome to Rat Simulator 2022")
+print ("This project was originally coded in Java for a college course")
+print ("As a personal project, I redid the program in Python, adhering to the same design specifications")
+
 rows = input("How many rows? ")
 columns = input("How many columns? ")
 
