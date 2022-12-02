@@ -12,12 +12,12 @@ class Desert:
         self.rows = size_of_desert[0]
         self.columns = size_of_desert[1]
 
-        self.desert = [[CellInterface() for rows in range(self.rows)] for columns in range(self.columns)]
+        self.desert = [[CellInterface() for rows in range(self.columns)] for columns in range(self.rows)]
         self.desert = self.create_cells(self.rows, self.columns)
 
     def create_cells(self, rows, columns):
-        for row in range(rows):
-            for column in range(columns):
+        for column in range(columns):
+            for row in range(rows):
                 cell_type = self.determine_cell_type()
 
                 if cell_type == "C":

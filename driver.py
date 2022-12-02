@@ -12,11 +12,15 @@ columns = input("How many columns? ")
 try: 
     size_of_desert[0] = int(rows)
 except Exception as e:
-    print(e)
+    print("exception type: ", e)
+    print("Assigning rows a value of 5")
+    size_of_desert[0] = 5
 try: 
     size_of_desert[1] = int(columns)
 except Exception as e:
-    print(e)
+    print("exception type: ", e)
+    print("Assigning columns a value of 5")
+    size_of_desert[1] = 5
 
 desert = Desert(size_of_desert)
 
