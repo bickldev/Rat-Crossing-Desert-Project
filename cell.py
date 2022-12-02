@@ -15,7 +15,7 @@ class Cell(CellInterface):
     def get_cell_type(self):
         return self.cell_type
 
-    def move(self, current_rat):
+    def move(self, current_rat: Rat):
 
         self.current_rat = current_rat
 
